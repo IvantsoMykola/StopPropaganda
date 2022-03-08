@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SiteBombarderFunction0",
+    "scriptFile": "StopPropaganda.Func.dll",
+    "entryPoint": "StopPropaganda.Func.SiteBombarderFunction.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "myTimer",
+        "type": "timerTrigger",
+        "direction": "In",
+        "schedule": "0 */1 * * * *",
+        "runOnStartup": true
+      }
+    ]
+  }
+]
